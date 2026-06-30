@@ -28,28 +28,13 @@ export function Timeline() {
           subtitle="กำหนดการในวันงาน"
         />
 
-        <div className="relative mt-8 max-w-sm mx-auto">
-          <div className="absolute left-[27px] top-4 bottom-4 w-px bg-bronze/30" />
-
-          {WEDDING.timeline.map((item, i) => (
-            <motion.div
-              key={item.time}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15, duration: 0.5 }}
-              className="relative mb-8 last:mb-0 flex items-center gap-6"
-            >
-              <div className="w-14 h-14 shrink-0 rounded-full bg-white border border-bronze flex items-center justify-center shadow-md z-10 relative">
-                {getIcon(item.title)}
-              </div>
-
-              <div className="flex-1 bg-white p-4 rounded-xl shadow-sm border border-cream-dark">
-                <p className="font-serif text-bronze text-xl font-medium mb-1 tracking-wider">{item.time}</p>
-                <p className="text-charcoal text-sm">{item.title}</p>
-              </div>
-            </motion.div>
-          ))}
+        <div className="mt-8 mx-auto flex justify-center">
+          <img
+            src="/images/timeline-crop.jpg"
+            alt="Wedding Timeline"
+            className="max-w-full h-auto rounded-xl shadow-sm border border-cream-dark"
+            loading="lazy"
+          />
         </div>
       </motion.div>
     </section>

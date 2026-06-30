@@ -18,7 +18,6 @@ export function Location() {
         <div className="text-center mb-5">
           <p className="font-serif text-charcoal text-lg">{WEDDING.venue.name}</p>
           <p className="font-serif text-bronze text-base mt-1">{WEDDING.venue.subtitle}</p>
-          <p className="text-taupe text-sm mt-2">{WEDDING.venue.address}</p>
         </div>
 
         <div className="relative rounded-xl overflow-hidden mb-6 h-48">

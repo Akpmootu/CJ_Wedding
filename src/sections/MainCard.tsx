@@ -12,7 +12,7 @@ export function MainCard({ playing, onToggleMusic }: MainCardProps) {
     <section id="main-card" className="relative min-h-[100dvh] flex flex-col">
       <div className="absolute inset-0">
         <img
-          src="/images/pic/CJ (8).jpg"
+          src="/images/pic/CJ (3).jpg"
           alt="Cherry & Jame"
           className="w-full h-full object-cover"
         />
