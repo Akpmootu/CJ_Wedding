@@ -1,16 +1,6 @@
 import { motion } from 'framer-motion'
 import { Clock } from 'lucide-react'
-import { FaDrum, FaRing, FaWater, FaUtensils } from 'react-icons/fa6'
-import { WEDDING } from '../config/wedding'
 import { SectionHeader } from '../components/SectionHeader'
-
-const getIcon = (title: string) => {
-  if (title.includes('แห่ขันหมาก')) return <FaDrum className="w-6 h-6 text-bronze" />
-  if (title.includes('สวมแหวน')) return <FaRing className="w-6 h-6 text-bronze" />
-  if (title.includes('รดน้ำสังข์')) return <FaWater className="w-6 h-6 text-bronze" />
-  if (title.includes('อาหาร')) return <FaUtensils className="w-6 h-6 text-bronze" />
-  return <Clock className="w-6 h-6 text-bronze" />
-}
 
 export function Timeline() {
   return (
